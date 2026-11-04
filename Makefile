@@ -9,11 +9,11 @@ arm:
 	CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build -v -o app-linux-arm64 .
 
 macos:
-	CGO_ENABLED=0 GOOS=darwin GOARCH=amd64 go build -v -o app-linux-amd64 .
-	CGO_ENABLED=0 GOOS=darwin GOARCH=arm64 go build -v -o app-linux-arm64 .
+	CGO_ENABLED=0 GOOS=darwin GOARCH=amd64 go build -v -o app-darwin-amd64 .
+	CGO_ENABLED=0 GOOS=darwin GOARCH=arm64 go build -v -o app-darwin-arm64 .
 
 windows:
-	CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build -v -o app-linux-amd64 .
+	CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build -v -o app-windows-amd64 .
 
 
 image:
