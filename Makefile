@@ -20,4 +20,4 @@ image:
 	docker build -t ${REGISTRY}/${APP}:${VERSION} .
 
 clean:
-	docker rmi ${REGISTRY}/${APP}:${VERSION}
+	docker rmi ${REGISTRY}/${APP}:${VERSION} -f
